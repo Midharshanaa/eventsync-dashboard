@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TicketSection from './components/TicketSection';
+import VenueController from './components/VenueController';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      fontFamily: 'Segoe UI',
+      backgroundColor: '#f5f8ff',
+      minHeight: '100vh',
+      padding: '30px'
+    }}>
+      <h1 style={{ textAlign: 'center', color: '#1f3c88' }}>
+        🎟️ EventSync Dashboard
+      </h1>
+      <p style={{ textAlign: 'center', fontSize: '18px' }}>
+        Live Ticketing and Smart Venue Control System
+      </p>
+      <TicketSection />
+      <VenueController />
     </div>
   );
 }
